@@ -37,10 +37,10 @@ python app.py
 1. 주피터 노트북 집입 후 `leffa_test.ipynb` 열기
 2. 7번칸 실행
 ```
-#3rdparty   app.py      in_img				 leffa_utils
-#LICENSE    ckpts       leffa				 preprocess
-#README.md  densepose   leffa_test.ipynb			 requirements.txt
-#SCHP	   detectron2  leffa_test.ipynb:Zone.Identifier  vton_script.py
+3rdparty   app.py      in_img				 leffa_utils
+LICENSE    ckpts       leffa				 preprocess
+README.md  densepose   leffa_test.ipynb			 requirements.txt
+SCHP	   detectron2  leffa_test.ipynb:Zone.Identifier  vton_script.py
 ```
 실행후 이렇게 나와야 정상
 ```
