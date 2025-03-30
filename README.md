@@ -4,6 +4,11 @@
 ## Acknowledgement
 Created by modifying [LEFFA](https://github.com/franciszzj/LEFFA).
 
+## 사양
+- 용량 : 34.3Gb
+- Ram : 24Gb 이상
+- Gpu : NVIDIA GPU (Test:RTX4080)
+
 # 설치전 작업
 1. wsl 우분투 설치
 2. 우분투 아나콘다 설치 - 파이썬 3.10
