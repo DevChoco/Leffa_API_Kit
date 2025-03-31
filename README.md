@@ -2,7 +2,9 @@
 > Leffa: Learning Flow Fields in Attention for Controllable Person Image Generation
 
 ## Acknowledgement
-Created by modifying [LEFFA](https://github.com/franciszzj/LEFFA).
+Created by modifying [Leffa](https://github.com/franciszzj/LEFFA).
+[Leffa Paper](https://arxiv.org/pdf/2412.08486).
+[Browse State-of-the-Art](https://paperswithcode.com/sota/virtual-try-on-on-viton-hd).
 
 ## 사양
 - 용량 : 34.3Gb
