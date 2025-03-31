@@ -13,7 +13,7 @@ Created by modifying [Leffa](https://github.com/franciszzj/LEFFA).
 
 # 설치전 작업
 1. wsl 우분투 설치
-2. 우분투 아나콘다 설치 - 파이썬 3.10
+2. 우분투 아나콘다 설치 - 파이썬 3.10 - [아나콘다 설치 참고](https://github.com/kimsehyun-34/Data_Preprocessing/edit/main/README.md)
 3. 우분투 아나콘다 주피터 노트북 설치
 
 
