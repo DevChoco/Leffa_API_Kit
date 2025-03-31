@@ -42,7 +42,7 @@ python app.py
 - 안나오더라도 app.py 동작후 `Ctrl + C`로 종료.
 # 실행
 1. 주피터 노트북 집입 후 `leffa_test.ipynb` 열기
-2. 7번칸 실행
+2. 7번칸 실행 - `!ls`(현재폴더에 어떤 자료가 있는지 확인)
 ```
 3rdparty   app.py      in_img				 leffa_utils
 LICENSE    ckpts       leffa				 preprocess
@@ -71,3 +71,24 @@ gen_img, mask_img, dense_img = vton.run(
 - person_image_path : 사람 이미지 경로
 - garment_image_path : 옷 이미지 경로
 - garment_type : `upper_body` or `lower_body` or `dress`
+
+## 구성
+> 우분투 기준
+```
+Leffa
+|
+|_3drparty
+|_leffa
+|_leffa_utils
+|_preprocess
+|_ckpts__
+        |_ST model
+        |_Model Data
+|_in_img__
+          |_옷 이미지
+          |_사람 이미지
+|_out_put
+|_leffa_test.ipynb
+|_vton_script.py
+|_ETC..
+```
