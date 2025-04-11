@@ -6,6 +6,11 @@ Created by modifying [Leffa](https://github.com/franciszzj/LEFFA).
 [Leffa Paper](https://arxiv.org/pdf/2412.08486).
 [Browse State-of-the-Art](https://paperswithcode.com/sota/virtual-try-on-on-viton-hd).
 
+-----
+
+https://chatgpt.com/share/67f9481b-ce6c-800e-9c4c-977166fc0df5
+
+-----
 ## 사양
 - 용량 : 34.3Gb
 - Ram : 24Gb 이상
