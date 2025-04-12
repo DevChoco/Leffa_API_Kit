@@ -10,6 +10,14 @@ Created by modifying [Leffa](https://github.com/franciszzj/LEFFA).
 
 https://chatgpt.com/share/67f9481b-ce6c-800e-9c4c-977166fc0df5
 
+
+### 환경접속
+```
+conda activate kim
+
+jupyter notebook
+```
+
 -----
 ## 사양
 - 용량 : 34.3Gb
