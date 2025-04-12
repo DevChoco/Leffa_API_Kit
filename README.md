@@ -11,7 +11,7 @@ Created by modifying [Leffa](https://github.com/franciszzj/LEFFA).
 https://chatgpt.com/share/67f9481b-ce6c-800e-9c4c-977166fc0df5
 
 
-### API 실향
+### API 실행 
 ```
 uvicorn api_main:app --reload
 ```
