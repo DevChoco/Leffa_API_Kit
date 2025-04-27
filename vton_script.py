@@ -10,6 +10,7 @@ from leffa_utils.densepose_predictor import DensePosePredictor
 from leffa_utils.utils import resize_and_center, get_agnostic_mask_hd, get_agnostic_mask_dc, preprocess_garment_image
 from preprocess.humanparsing.run_parsing import Parsing
 from preprocess.openpose.run_openpose import OpenPose
+import torch
 
 class LeffaVirtualTryOn:
     def __init__(self, ckpt_dir: str):
@@ -120,6 +121,7 @@ class LeffaVirtualTryOn:
         ref_image_path,
         control_type,
         ref_acceleration=False,
+        output_path: str = None,
         step=30,
         scale=2.5,
         seed=42,
@@ -140,7 +142,16 @@ class LeffaVirtualTryOn:
 
         # Mask 생성
         if control_type == "virtual_tryon":
-            garment_type_hd = "upper" if vt_garment_type in ["upper_body", "dresses"] else "lower"
+            # vt_garment_type을 AutoMasker의 mask_type에 매핑
+            if vt_garment_type == "dresses":
+                garment_type_hd = "overall"  # AutoMasker에서 허용되는 값으로 매핑
+            elif vt_garment_type == "upper_body":
+                garment_type_hd = "upper"
+            elif vt_garment_type == "lower_body":
+                garment_type_hd = "lower"
+            else:
+                raise ValueError(f"Invalid vt_garment_type: {vt_garment_type}")
+
             mask = self.mask_predictor(src_image, garment_type_hd)["mask"]
 
             if src_mask_path:
@@ -178,5 +189,10 @@ class LeffaVirtualTryOn:
         )
 
         gen_image = result["generated_image"][0]
-        return gen_image, mask, densepose
 
+        torch.cuda.empty_cache()
+
+        if output_path:
+            gen_image.save(output_path)
+        
+        return gen_image, mask, densepose
