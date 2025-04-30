@@ -107,3 +107,11 @@ Leffa
 |_vton_script.py
 |_ETC..
 ```
+
+----
+## Acknowledgments
+
+```
+This project incorporates the [leffa](https://github.com/franciszzj/LEFFA) model, licensed under the MIT License.
+© 2024 Original leffa contributors. Modified and used under the terms of the MIT License.
+```
