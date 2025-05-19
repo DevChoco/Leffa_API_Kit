@@ -34,6 +34,7 @@ jupyter notebook
 - 용량 : 34.3Gb
 - Ram : 24Gb 이상
 - Gpu : NVIDIA GPU (Test:RTX4080)
+- OS : Ubuntu
 
 # 설치전 작업
 1. wsl 우분투 설치
