@@ -1,5 +1,6 @@
 # Leffa_API_Kit
 > Leffa: Learning Flow Fields in Attention for Controllable Person Image Generation
+> : Attention과 Flow Fields를 이용한 능동 가상피팅 AI모델 - API Ver
 
 ## Acknowledgement
 Created by modifying [Leffa](https://github.com/franciszzj/LEFFA).
@@ -31,10 +32,10 @@ jupyter notebook
 -----
 # 초기설정+실행
 ## 사양
-- 용량 : 34.3Gb
-- Ram : 24Gb 이상
+- 용량 : 34.3Gb (최소)
+- Ram : 24Gb 이상 (최소 )
 - Gpu : NVIDIA GPU (Test:RTX4080)
-- OS : Ubuntu
+- OS : Ubuntu (필수)
 
 # 설치전 작업
 1. wsl 우분투 설치
