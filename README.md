@@ -8,11 +8,11 @@ Created by modifying [Leffa](https://github.com/franciszzj/LEFFA).
 
 -----
 ## 수정파일 정보
-- api_main.py -> API 서버 코드
-- 요청.py -> API 클라이언트 Test 코드
-- leffa_test.ipynb -> 수정된 leffa실행 테스트 코드
-- utils.py -> 마스킹파이프라인 수정코드
-- vton_script.py -> 메인 파이프라인 엔진 app.py수정코드 (web삭제, virtual try-on 기능만)
+- `api_main.py` -> API 서버 코드
+- `요청.py` -> API 클라이언트 Test 코드
+- `leffa_test.ipynb` -> 수정된 leffa실행 테스트 코드
+- `utils.py` -> 마스킹파이프라인 수정코드
+- `vton_script.py` -> 메인 파이프라인 엔진 app.py수정코드 (web삭제, virtual try-on 기능만)
 
 -----
 # API 실행
