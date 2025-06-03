@@ -19,7 +19,7 @@ Created by modifying [Leffa](https://github.com/franciszzj/LEFFA).
 # API 실행
 `우분투 : conda activate leffa` 접속 후
 ```
-uvicorn api_main:app --reload
+uvicorn api_main:app --reload --port 8001
 ```
 
 # 환경접속
