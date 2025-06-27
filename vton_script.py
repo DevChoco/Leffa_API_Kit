@@ -123,7 +123,7 @@ class LeffaVirtualTryOn:
         ref_acceleration=False,
         output_path: str = None,
         step=30,
-        scale=2.5,
+        cross_attention_kwargs={"scale": 3},
         seed=42,
         vt_model_type="viton_hd",
         vt_garment_type="upper_body",
@@ -183,7 +183,7 @@ class LeffaVirtualTryOn:
             data,
             ref_acceleration=ref_acceleration,
             num_inference_steps=step,
-            guidance_scale=scale,
+            cross_attention_kwargs={"scale": cross_attention_kwargs},  # scale을 cross_attention_kwargs로 전달
             seed=seed,
             repaint=vt_repaint
         )
